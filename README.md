@@ -16,7 +16,7 @@ Este add-in automatiza todo esse fluxo diretamente no Excel, com dois botões: *
 - Copia a aba `Base` e renomeia automaticamente com horário e índice (`Online_22h_1`, por exemplo)
 - Reestrutura as colunas conforme o layout esperado do relatório
 - Classifica cada site nas seguintes categorias de **Pareto**:
-  - `TEL` — falha de telecomunicações
+  - `Field` — falha de campo
   - `PROVEDOR` — falha de provedor (Tx Terceira, Tx SWAP, Ran-sharing)
   - `REGIONAL` — falha regional
   - `2G` — sites de tecnologia 2G
@@ -31,8 +31,8 @@ Este add-in automatiza todo esse fluxo diretamente no Excel, com dois botões: *
 
 ### Atualizar
 - Lê todas as abas `Online_*` existentes na planilha
-- Consolida os totais por categoria e faixa de downtime nas abas **Resumo** e **Resumo_TEL**
-- No `Resumo_TEL`, detalha os dados de TEL por estado: **AM, AP, MA, PA, RR**
+- Consolida os totais por categoria e faixa de downtime nas abas **Resumo** e **Resumo_Field**
+- No `Resumo_Field`, detalha os dados de Field por estado: **AM, AP, MA, PA, RR**
 - Ordena as abas numericamente antes de processar
 
 ---
@@ -64,7 +64,7 @@ Este add-in automatiza todo esse fluxo diretamente no Excel, com dois botões: *
 | `Base` | Dados brutos exportados do sistema de monitoramento |
 | `Online_*` | Abas geradas automaticamente pelo botão Formatar |
 | `Resumo` | Consolidação geral por categoria e downtime |
-| `Resumo_TEL` | Consolidação de falhas TEL por estado |
+| `Resumo_Field` | Consolidação de falhas Field por estado |
 
 ---
 
